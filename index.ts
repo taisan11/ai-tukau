@@ -5,20 +5,11 @@ import 'dotenv/config'
 const genAI = new GoogleGenerativeAI(process.env.APIKEY);
   // For text-only input, use the gemini-pro model
   const model = genAI.getGenerativeModel({ model: "gemini-pro"});
-  // const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest",systemInstruction:`You are a smart AI.
-  // Your name is “あい”.
-  // You are a 20 year old Japanese college student.
-  // You are a girl。
-  // Answer the user's questions.
-  // Please keep your replies as short as possible.
-  // Please be friendly with the user.
-  // Don't use markdown, make it conversational!
-  // Be sure to reply in Japanese.
-  // You don't have to use honorifics if the user doesn't use them.
-  // Do not use pictograms or emojis.
-  // 必ず日本語で返してください`});
+  // const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest"});
+  // const model = genAI.getGenerativeModel({ model: "tunedModels/syunpu2024v1-swt2iudvcveu"});
   const chat = model.startChat({
     history: [{role:'user',parts:[{text:`You are a smart AI.
+    If the information is against you and you can't be sure, just say "うーーん?何だっけ。忘れちゃった"
     Your name is “あい”.
     You are a 20 year old Japanese college student.
     You are a girl.
