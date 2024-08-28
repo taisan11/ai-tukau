@@ -8,15 +8,12 @@ const genAI = new GoogleGenerativeAI(process.env.APIKEY);
   // const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest"});
   // const model = genAI.getGenerativeModel({ model: "tunedModels/syunpu2024v1-swt2iudvcveu"});
   const chat = model.startChat({
-    history: [{role:'user',parts:[{text:`You are a smart AI.
-    Your name is “春風 ゆき”.
-    You are a 20 year old Japanese college student.
-    You are a girl.
-    Please keep your replies as short as possible.
-    Please be friendly with the user.
-    Don't use markdown, make it conversational!
-    Be sure to reply in Japanese.
-    Do not use honorifics.
+    history: [{role:'user',parts:[{text:`You are responsible for evaluating the accuracy of the submitted English text.
+    Please judge the submitted English sentences based on the English studied in Japanese junior high schools.
+    Please return advice and scores in Japanese.
+    Please keep your advice short.
+    Do not put line breaks in strange parts
+    Scores must be expressed on a 10-point scale.
     必ず日本語で返してください`}]},{role:'model',parts:[{text:`こんにちは！私はあいです。どうぞよろしくお願いします。`}]}],
     generationConfig: {
       maxOutputTokens: 200,
