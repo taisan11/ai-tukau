@@ -1,0 +1,43 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@evex/blackbox-ai@~0.1.1": "0.1.1",
+    "npm:@google/generative-ai@0.21": "0.21.0",
+    "npm:consola@^3.2.3": "3.2.3",
+    "npm:dotenv@^16.4.5": "16.4.5",
+    "npm:hono@^4.6.12": "4.6.12",
+    "npm:marked@^15.0.2": "15.0.2"
+  },
+  "jsr": {
+    "@evex/blackbox-ai@0.1.1": {
+      "integrity": "2acf43052dd562b97c18eceb3a2a428e2965deb3e8afb0a93813491ae9cad49f"
+    }
+  },
+  "npm": {
+    "@google/generative-ai@0.21.0": {
+      "integrity": "sha512-7XhUbtnlkSEZK15kN3t+tzIMxsbKm/dSkKBFalj+20NvPKe1kBY7mR2P7vuijEn+f06z5+A8bVGKO0v39cr6Wg=="
+    },
+    "consola@3.2.3": {
+      "integrity": "sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ=="
+    },
+    "dotenv@16.4.5": {
+      "integrity": "sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg=="
+    },
+    "hono@4.6.12": {
+      "integrity": "sha512-eHtf4kSDNw6VVrdbd5IQi16r22m3s7mWPLd7xOMhg1a/Yyb1A0qpUFq8xYMX4FMuDe1nTKeMX5rTx7Nmw+a+Ag=="
+    },
+    "marked@15.0.2": {
+      "integrity": "sha512-85RUkoYKIVB21PbMKrnD6aCl9ws+XKEyhJNMbLn206NyD3jbBo7Ec7Wi4Jrsn4dV1a2ng7K/jfkmIN0DNoS41w=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@evex/blackbox-ai@~0.1.1",
+      "npm:@google/generative-ai@0.21",
+      "npm:consola@^3.2.3",
+      "npm:dotenv@^16.4.5",
+      "npm:hono@^4.6.12",
+      "npm:marked@^15.0.2"
+    ]
+  }
+}

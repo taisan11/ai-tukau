@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@evex/blackbox-ai": "jsr:@evex/blackbox-ai@^0.1.1",
+    "@google/generative-ai": "npm:@google/generative-ai@^0.21.0",
+    "consola": "npm:consola@^3.2.3",
+    "dotenv": "npm:dotenv@^16.4.5",
+    "hono": "npm:hono@^4.6.12",
+    "marked": "npm:marked@^15.0.2"
+  }
+}

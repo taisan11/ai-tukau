@@ -1,5 +1,5 @@
 // import { ask } from './index';
-import { ask } from './eigoHantei';
+import { ask } from './index.ts';
 import * as readline from 'node:readline';
 import { marked } from 'marked';
 
